@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useCompletion } from 'ai/react'
 
-import {  Wand2 } from 'lucide-react'
+import {  Github, Wand2 } from 'lucide-react'
 
 import { Button } from "./components/ui/button";
 import { Slider } from "./components/ui/slider";
@@ -44,6 +44,18 @@ export function App() {
           <span className="text-sm text-muted-foreground"> 
             Desenvolvido com 💜 por Isabelle Império
           </span>
+
+          <Separator orientation="vertical" className="h-6" />
+
+          <a href="https://github.com/Imperio21/upload-ia" target="_blank" className="flex items-center">
+            <Github className="w-4 h-4 mr-2" />
+            GitHub
+          </a>
+          
+          {/* <Button variant="outline">
+            <Github className="w-4 h-4 mr-2" />
+            GitHub
+          </Button> */}
         </div>
       </div>
 
